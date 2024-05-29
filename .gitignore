@@ -1,1 +1,4 @@
 venv/
+warehouse/Products/migrations/
+warehouse/Products/__pycache__
+warehouse/warehouse/__pycache__
