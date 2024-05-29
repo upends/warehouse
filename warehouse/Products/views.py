@@ -8,7 +8,7 @@ from rest_framework import status
 # Create your views here.
 
 def warehouseLandingPage(request):
-    return HttpResponse('Hi this is http response')
+    return HttpResponse('This is a warehouse')
 
 
 @api_view(['GET'])
