@@ -30,3 +30,77 @@ git clone https://github.com/upends/warehouse.git
    ```
 
 4. The application should now be running. You can access it at `http://localhost:8000`.
+
+## APIs
+
+### 1. Create Product
+- **Endpoint**: `POST /v1/api/product/create`
+- **Description**: This API creates a new product with the provided details.
+- **Request Method**: `POST`
+- **Request Body**:
+  ```json
+  {
+      "name": "Product P4",
+      "category": "Clothing",
+      "price": 5543.12
+  }
+
+## APIs
+
+### 2. Get Product by ID
+
+- **Endpoint**: `GET /v1/api/product/update/{id}`
+- **Description**: This API retrieves a specific product by its ID.
+- **Request Method**: `GET`
+- **URL Parameters**:
+  - `{id}`: The unique identifier of the product.
+- **Response**:
+  ```json
+  {
+      "name": "Product P2",
+      "category": "Clothing",
+      "price": 543.12
+  }
+
+### 3. Get All Products API
+
+- **Endpoint**: `GET /v1/api/products`
+- **Description**: This API retrieves all products.
+- **Request Method**: `GET`
+- **Response**:
+  ```json
+  [
+      {
+        "name": "Product P2",
+        "category": "Clothing",
+        "price": 543.12
+    },
+      {
+        "name": "Product P4",
+        "category": "Clothing",
+        "price": 5543.12
+    }
+  ]
+
+### 4. Update Product API
+
+- **Endpoint**: `PATCH /api/product/update/{id}`
+- **Description**: This API updates a specific product by its ID.
+- **Request Method**: `PATCH`
+- **URL Parameters**:
+  - `{id}`: The unique identifier of the product.
+- **Request Body**:
+  ```json
+  {
+      "name": "Product P5",
+      "price": 999.99
+  }
+
+
+### 8. Delete Product API
+
+- **Endpoint**: `DELETE /v1/api/product/delete/{id}`
+- **Description**: This API deletes a specific product by its ID.
+- **Request Method**: `DELETE`
+- **URL Parameters**:
+  - `{id}`: The unique identifier of the product to be deleted.
