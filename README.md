@@ -1,4 +1,4 @@
-# Dockerized Django Application
+# Dockerized Django Application To Manage Inventory
 
 Before you begin, ensure you have the following installed on your system:
 
